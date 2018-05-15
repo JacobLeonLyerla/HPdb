@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const GriffindorRouter = require('./Gryffindor/gryffindorRouter')
+const HufflepuffRouter = require('./Hufflepuff/hufflepuffRouter')
 const server = express();
 
 server.use(express.json());
@@ -9,6 +10,7 @@ server.use(cors())
 
 
 server.use('/gryffindor', GriffindorRouter)
+server.use('/hufflepuff',HufflepuffRouter)
 mongoose
 .connect('mongodb://localhost/HarryPotterdb')
 .then(response =>{

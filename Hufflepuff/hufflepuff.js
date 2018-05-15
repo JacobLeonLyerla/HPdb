@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const Gryffindor = new mongoose.Schema({
+const Hufflepuff = new mongoose.Schema({
     name:{
         type:String,
         required:true,
@@ -36,7 +36,7 @@ const Gryffindor = new mongoose.Schema({
     skin_color:String,
     img:{
         type:String,
-        default:"https://pre00.deviantart.net/d094/th/pre/f/2007/210/9/4/gryffindor_wallpaper_by_ibuki_san.jpg"
+        default:"https://pre00.deviantart.net/ad55/th/pre/f/2007/158/d/8/hufflepuff_wall_by_ibuki_san.jpg"
     },
     wikiaInfo:{
         type:String,
@@ -46,4 +46,4 @@ const Gryffindor = new mongoose.Schema({
 
 })
 
-module.exports = mongoose.model('Gryffindor',Gryffindor)
+module.exports = mongoose.model('Hufflepuff',Hufflepuff)
