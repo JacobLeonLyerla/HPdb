@@ -1,0 +1,19 @@
+{
+  "name": "hpdb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/JacobLeonLyerla/HPdb.git",
+  "author": "Jacob Leon Lyerla <umasour@yahoo.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongoose": "^5.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.4"
+  }
+}
